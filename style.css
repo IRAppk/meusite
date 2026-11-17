@@ -1,0 +1,615 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color:#fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.menu-desktop ul li a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+}
+
+/* TOPO DO SITE */
+
+.topo-do-site{
+    padding: 40px 4%;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span{
+    color: #00ff08;
+}
+
+.topo-do-site p{
+    color: #fff;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+.flex{
+    display: flex;
+}
+
+.topo-do-site .btn-contato button{
+    padding: 18px 60px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.topo-do-site .btn-contato button:hover{
+    box-shadow: 0px 0px 10px #00ff08;
+    transform: scale(1.05);
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESPECIALIDADES */
+
+section.Especialidades{
+    padding: 40px 4%;
+}
+
+section.Especialidades h2{
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+section.Especialidades h2 span{
+    color: #00ff08;
+}
+
+.Especialidades .flex{
+    gap: 60px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.Especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .2s;
+}
+
+.Especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ff08;
+}
+
+.Especialidades-box i{
+    font-size: 60px;
+    color: #00ff08;
+}
+
+.Especialidades-box h3{
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+/* SOBRE */
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+.btn-social button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ff08;
+}
+
+.img-sobre img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+/* PROJETOS */
+
+/* =========================================
+   PROJETOS - ESTILO SWIPER 3D
+   ========================================= */
+
+section.projetos {
+    padding: 80px 0;
+    position: relative;
+    /* Fundo Degradê Azul (igual à imagem) */
+    background: linear-gradient(135deg, #001f3f 0%, #0074D9 50%, #001f3f 100%);
+    overflow: hidden;
+}
+
+/* Container interno para limitar largura */
+section.projetos .interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+section.projetos h2 {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+section.projetos h2 span {
+    color: #00ff08; /* Seu verde neon */
+}
+
+/* Configurações do Swiper */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Tamanho base do slide */
+    width: 300px; 
+    height: 400px;
+}
+
+/* O Card do Projeto */
+.proj-card-swiper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #000;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Overlay (Texto) */
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    padding: 20px;
+    color: #fff;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-overlay h3 {
+    font-size: 20px;
+    margin: 0;
+    color: #00ff08;
+}
+
+.card-overlay p {
+    font-size: 14px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Efeitos Hover */
+.swiper-slide:hover .card-img-wrapper img {
+    transform: scale(1.1);
+}
+
+.swiper-slide:hover .card-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Customização das Bolinhas (Paginação) */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background: #00ff08; /* Verde neon ativo */
+    width: 25px; /* Fica mais largo quando ativo */
+    border-radius: 10px;
+}
+
+/* Customização das Setas */
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;
+    background: rgba(0, 255, 8, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background: #00ff08;
+    color: #000;
+    box-shadow: 0 0 15px #00ff08;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 250px;
+        height: 350px;
+    }
+    
+    section.projetos h2 {
+        font-size: 28px;
+    }
+}
+
+/* FEEDBACKS */
+
+section.feedbacks{
+    padding: 80px 4%;
+}
+
+section.feedbacks h2{
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+}
+
+section.feedbacks h2 span{
+    color: #00ff08;
+}
+
+.feedback-container{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feedback-box{
+    background: #111;
+    padding: 30px;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    transition: .3s;
+    border: 1px solid #1f1f1f;
+    color: #fff;
+}
+
+.feedback-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ff08;
+}
+
+.feedback-box i{
+    font-size: 45px;
+    color: #00ff08;
+    margin-bottom: 15px;
+}
+
+.feedback-box h3{
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.feedback-box p{
+    color: #fff;
+    line-height: 24px;
+}
+
+.feedback-box h3{
+    color: #fff;
+}
+
+/* CONTATO */
+
+section.contato{
+    padding: 120px 4%;
+    text-align: center;
+    background: linear-gradient(to bottom, #000, #050505);
+}
+
+section.contato h2{
+    font-size: 32px;
+    color: #fff;
+}
+
+section.contato h2 span{
+    color: #00ff08;
+}
+
+.subtitulo{
+    color: #aaa;
+    margin: 10px 0 40px;
+}
+
+/* FORM */
+
+form{
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Campos normais */
+
+form input:not([type="submit"]),
+form textarea{
+    width: 100%;
+    background-color: #2b2b2b;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    transition: .3s;
+}
+
+form input:not([type="submit"]):focus,
+form textarea:focus{
+    box-shadow: 0 0 10px #00ff08;
+}
+
+form textarea{
+    height: 140px;
+    resize: none;
+}
+
+/* BOTÃO */
+
+.btn-enviar{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn-enviar input[type="submit"]{
+    width: 220px;
+    height: 55px;
+
+    padding: 0;
+    margin: 0;
+
+    background: #00ff08;
+    color: #000;
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 18px;
+    font-weight: bold;
+
+    text-align: center;
+    line-height: 55px;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-enviar input[type="submit"]:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ff08;
+}
+
+
+/* FOOTER */
+
+footer{
+    padding: 40px 4%;
+    background-color: #000;
+}
+
+footer .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer h2{
+    color: #00ff08;
+    font-size: 28px;
+}
+
+.social-footer button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.social-footer button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff08;
+}
+
+.linha{
+    height: 2px;
+    background-color: #00ff08;
+    margin: 20px 0;
+}
+
+.email{
+    color: #fff;
+    font-size: 14px;
+}
+
+.email i{
+    color: #00ff08;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.feedback-box{
+    color: #fff !important;
+}
+
+.feedback-box h3{
+    color: #fff !important;
+}
+
+.feedback-box p{
+    color: #fff !important;
+}
