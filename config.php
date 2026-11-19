@@ -1,4 +1,5 @@
 <?php
+// config.php
 $host   = getenv('DB_HOST') ?: 'bancodedados-b2r5tj.db.enzonic.com';
 $port   = getenv('DB_PORT') ?: '3306';
 $dbname = getenv('DB_NAME') ?: 'main';
